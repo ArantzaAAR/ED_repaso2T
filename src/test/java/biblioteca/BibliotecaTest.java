@@ -35,7 +35,8 @@ class BibliotecaTest {
 
     @Test
     void encuentraLibroPorTitulo() {
-        boolean b = biblioteca.agregarLibro(this.libro);
+        List<Libro> libro = new ArrayList<>();
+        biblioteca.agregarLibro(this.libro);
 
         //No está vacía
         assertNotNull(biblioteca.getLibros());
