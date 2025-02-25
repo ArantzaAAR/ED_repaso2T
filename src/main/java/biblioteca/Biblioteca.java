@@ -100,6 +100,7 @@ public class Biblioteca {
      * @param autor cadena de texto con el nombre del autor
      * @return Nos devuelve el autor del libro
      */
+    @Deprecated
     public Libro encuentaLibroPorAutor(String autor) {
         for (Libro libro : libros) {
             if (libro.getAutor().equals(autor)) {
